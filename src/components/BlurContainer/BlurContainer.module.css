@@ -1,0 +1,92 @@
+.blurContainer {
+  width: 60%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 20px 10px;
+  padding-bottom: 10px;
+}
+
+.blurInner {
+  display: flex;
+  justify-content: space-around;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+.blurContainer p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.detailsElem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.name {
+  margin-right: 20px;
+}
+
+.blurInner::-webkit-scrollbar {
+  width: 5px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: transparent;
+}
+
+/* ползунок скроллбара */
+.blurInner::-webkit-scrollbar-thumb {
+  background-color: #333b43;
+  border-radius: 9em;
+  /* box-shadow: inset 1px 1px 10px #20262c; */
+}
+
+.blurInner::-webkit-scrollbar-thumb:hover {
+  background-color: #2b3138;
+}
+
+@media (max-width: 670px) {
+  .blurInner {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 544px) {
+  .date h1 {
+    font-size: 20px;
+  }
+
+  .deg {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  .dateContainer {
+    padding-left: 10px;
+  }
+  .weatherMainInfo {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 416px) {
+  .dateContainer {
+    width: 100%;
+    height: calc(100% - 146px);
+  }
+  .weatherMainInfo {
+    margin-bottom: 20px;
+  }
+  .deg {
+    font-size: 60px;
+  }
+  .blurContainer {
+    width: 100%;
+    height: calc(100% - 154px);
+    padding-bottom: 1px;
+  }
+}

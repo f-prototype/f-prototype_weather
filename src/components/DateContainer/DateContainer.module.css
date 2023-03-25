@@ -1,0 +1,84 @@
+.weatherMainInfo {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.deg {
+  font-size: 70px;
+  margin-right: 30px;
+  display: inline;
+}
+
+.img_weather {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 50px;
+}
+
+.img img {
+  width: 100%;
+}
+
+.weather {
+  font-size: 15px;
+  align-items: center;
+}
+
+.dateContainer {
+  width: 40%;
+  padding: 20px 0px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 670px) {
+  .blurInner {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 544px) {
+  .date h1 {
+    font-size: 20px;
+  }
+
+  .deg {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  .dateContainer {
+    padding-left: 10px;
+  }
+  .weatherMainInfo {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 416px) {
+  .dateContainer {
+    width: 100%;
+    height: calc(100% - 146px);
+  }
+  .weatherMainInfo {
+    margin-bottom: 20px;
+  }
+  .deg {
+    font-size: 60px;
+  }
+  .blurContainer {
+    width: 100%;
+    height: calc(100% - 154px);
+    padding-bottom: 1px;
+  }
+}

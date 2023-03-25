@@ -1,0 +1,28 @@
+.page-one {
+  width: 90%;
+  height: 600px;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+@media (max-width: 965px) {
+  .page-one {
+    display: block;
+  }
+}
+
+@media (max-width: 858px) {
+  .page-one {
+    height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-one {
+    height: 320px;
+  }
+}

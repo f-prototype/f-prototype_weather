@@ -1,0 +1,81 @@
+.weather-info-container {
+  width: 40%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(20px);
+  padding-left: 40px;
+}
+
+.form {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  margin-bottom: 40px;
+}
+
+.input {
+  width: calc(100% - 80px);
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  background: transparent;
+  border: 0;
+  color: #5e6f79;
+  border-bottom: 1px solid #5e6f79;
+}
+
+.input:focus {
+  color: #fff;
+  background: transparent;
+  outline: none;
+}
+
+.input::placeholder {
+  color: #5e6f79;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover img {
+  transform: scale(0.9);
+}
+
+.button img {
+  transition: all 0.2s linear;
+}
+
+@media (max-width: 965px) {
+  .weather-info-container {
+    width: 100%;
+    height: calc(100% - 230px);
+  }
+  .details {
+    height: calc(100% - 80px);
+    overflow: auto;
+  }
+}
+
+@media (max-width: 858px) {
+  .form {
+    margin-bottom: 20px;
+  }
+  .details {
+    height: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 400px) {
+  .weather-info-container {
+    height: calc(100% - 160px);
+    padding-left: 20px;
+  }
+}

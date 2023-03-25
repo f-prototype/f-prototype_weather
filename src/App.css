@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Porcelain;
+  src: url('./fonts/Porcelain.ttf');
+}
+* {
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 965px) {
+  .App {
+    margin-top: 0;
+    height: 100vh;
+    padding-top: 40px;
+  }
+  .page-one {
+    display: block;
+  }
+  .main-page {
+    width: 100%;
+    height: 230px;
+  }
+  .main-info {
+    margin-bottom: 25px;
+  }
+  .weather-info-container {
+    width: 100%;
+    height: calc(100% - 230px);
+  }
+  .details {
+    height: calc(100% - 80px);
+    overflow: auto;
+  }
+}
+
+@media (max-width: 858px) {
+  .page-one {
+    height: 500px;
+  }
+  .form {
+    margin-bottom: 20px;
+  }
+  .details {
+    height: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 700px) {
+  .deg {
+    font-size: 80px;
+    margin-bottom: -15px;
+  }
+  .location {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-info {
+    margin-left: 0;
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-one {
+    height: 400px;
+  }
+  .main-page {
+    height: 160px;
+  }
+  .main-info {
+    padding: 0 10px;
+  }
+  .weather-info-container {
+    height: calc(100% - 160px);
+    padding-left: 20px;
+  }
+  .deg {
+    font-size: 37px;
+    margin-bottom: -5px;
+  }
+  .location {
+    font-size: 20px;
+  }
+  .location_date {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .date,
+  .weather {
+    font-size: 15px;
+  }
+  .img {
+    width: 40px;
+  }
+}
+
+.details::-webkit-scrollbar {
+  width: 5px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
+  background-color: transparent;
+}
+
+/* ползунок скроллбара */
+.details::-webkit-scrollbar-thumb {
+  background-color: #333b43;
+  border-radius: 9em;
+  /* box-shadow: inset 1px 1px 10px #20262c; */
+}
+
+.details::-webkit-scrollbar-thumb:hover {
+  background-color: #2b3138;
+}

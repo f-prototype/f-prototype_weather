@@ -1,0 +1,17 @@
+.h {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .details-inner {
+    display: flex;
+    justify-content: space-between;
+    color: #e3e4e7;
+    margin-bottom: 30px;
+  }
+  
+  .info-inner {
+    margin-right: 30px;
+  }
+  

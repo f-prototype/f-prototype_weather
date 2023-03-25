@@ -1,0 +1,20 @@
+.day {
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+  text-align: left;
+  display: flex;
+  overflow: hidden;
+}
+
+@media (max-width: 416px) {
+  .day {
+    display: block;
+  }
+}
