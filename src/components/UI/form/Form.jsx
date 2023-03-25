@@ -46,7 +46,7 @@ export const Form = ({ infoWeather, setCity }) => {
         <img
           className="search"
           alt="search"
-          src={require('../../img/search.png')}
+          src={require('../../../img/search.png')}
         />
       </button>
     </form>
